@@ -1,0 +1,19 @@
+{
+  "name": "floatplane-api",
+  "version": "1.0.0",
+  "description": "Unofficial Floatplane API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ERmilburn02/Floatplane-API.git"
+  },
+  "author": "ERmilburn02",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/ERmilburn02/Floatplane-API/issues"
+  },
+  "homepage": "https://github.com/ERmilburn02/Floatplane-API#readme"
+}
