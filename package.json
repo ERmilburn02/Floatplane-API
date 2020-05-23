@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ERmilburn02/Floatplane-API.git"
   },
   "author": "ERmilburn02",
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ERmilburn02/Floatplane-API/issues"
   },
