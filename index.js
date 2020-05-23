@@ -1,4 +1,5 @@
-const https = require('https');
+const https = require("https");
+const tools = require("./tools");
 exports.login = function (username, password) {
   const data = JSON.stringify({
     username: username,
@@ -6,25 +7,25 @@ exports.login = function (username, password) {
   });
 
   const options = {
-    hostname: 'www.floatplane.com',
+    hostname: "www.floatplane.com",
     port: 443,
-    path: '/api/auth/login',
-    method: 'POST',
+    path: "/api/auth/login",
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
-      'Content-Length': data.length,
+      "Content-Type": "application/json",
+      "Content-Length": data.length,
     },
   };
 
   const req = https.request(options, (res) => {
     console.log(`statusCode: ${res.statusCode}`);
 
-    res.on('data', (d) => {
+    res.on("data", (d) => {
       process.stdout.write(d);
     });
   });
 
-  req.on('error', (error) => {
+  req.on("error", (error) => {
     console.error(error);
   });
 
